@@ -1,0 +1,9 @@
+{
+  "name": "samtalekart-app",
+  "private": true,
+  "scripts": {
+    "dev": "bash scripts/dev-preview.sh",
+    "check": "npm --prefix frontend run build && PYTHONPATH=backend .venv/bin/python backend/tests/smoke_flow.py"
+  }
+}
+
