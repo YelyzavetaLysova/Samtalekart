@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Samtaleassistent for norsk gruppesamtale">
+  <title>Samtaleassistent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="prototype-shell">
+    <section class="phone-stage" aria-label="Samtaleassistent">
+      <div id="participantDevice"></div>
+    </section>
+  </main>
+
+  <aside class="demo-controller" aria-label="Prototype state controls">
+    <button class="demo-toggle" id="demoToggle" type="button" aria-expanded="false">Walkthrough controls</button>
+    <div class="demo-panel" id="demoPanel" hidden>
+      <div class="demo-heading">
+        <div>
+          <strong>AI-supported prototype</strong>
+          <span>Moderator controls. Not visible to the learner.</span>
+        </div>
+        <button class="demo-close" id="demoClose" type="button" aria-label="Close walkthrough controls">×</button>
+      </div>
+      <p class="demo-instruction">Use Next only to simulate speech and automatic AI updates. Learner buttons inside the phone are interactive.</p>
+      <div class="demo-state-list" id="demoStateList"></div>
+      <div class="demo-nav">
+        <button id="demoPrevious" type="button">Previous</button>
+        <button id="demoNext" type="button">Next</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
